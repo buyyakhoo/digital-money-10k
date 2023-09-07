@@ -15,14 +15,10 @@ const Residents : CostData[] = [
     {
         name: 'ค่าเช่าบ้าน (ต่อเดือน)',
         price: 15000
-    },
+    }
 ]
 
 const Transports : CostData[] = [
-    {
-        name: 'ค่าเช่ารถ (ต่อวัน)',
-        price: 1375
-    },
     {
         name: 'ค่าวิน (ต่อครั้ง)',
         price: 20
@@ -41,16 +37,40 @@ const Transports : CostData[] = [
     },
     {
         name: 'ค่ารถไฟฟ้า',
-        price: 45
+        price: 60
+    },
+    {
+        name: 'ค่าเช่ารถ (ต่อวัน)',
+        price: 1375
     },
     {
         name: 'ค่าเครื่องบินไปเชียงใหม่ (ต่อครั้ง)',
         price: 2380
     },
     {
+        name: 'ค่าเครื่องบินไปสิงคโปร์ (ต่อครั้ง)',
+        price: 3500
+    },
+    {
+        name: 'ค่าเครื่องบินไปจีน (ต่อครั้ง)',
+        price: 4355
+    },
+    {
         name: 'ค่าเครื่องบินไปญี่ปุ่น (ต่อครั้ง)',
         price: 9000
-    }
+    },
+    {
+        name: 'ค่าเครื่องบินไปเกาหลี (ต่อครั้ง)',
+        price: 7000
+    },
+    {
+        name: 'ค่าเครื่องบินไปยุโรป (ต่อครั้ง)',
+        price: 20000
+    },
+    {
+        name: 'ค่าเครื่องบินไปอเมริกา (ต่อครั้ง)',
+        price: 40000
+    },
 ]
 
 const Educations : CostData[] = [
@@ -79,11 +99,15 @@ const Educations : CostData[] = [
         price: 5000
     },
     {
+        name: 'ค่าเรียนพิเศษ (เฉลี่ยต่อเดือน)',
+        price: 1000
+    },
+    {
         name: 'ค่าไอแพด',
         price: 20000
     },
     {
-        name: 'ค่าคอมพิวเตอร์',
+        name: 'ค่าคอมพิวเตอร์ / โน๊ตบุ๊ค',
         price: 20000
     },
 ]
@@ -91,19 +115,23 @@ const Educations : CostData[] = [
 const Foods : CostData[] = [
     {
         name: 'ข้าวผัด',
-        price: 35
+        price: 40
+    },
+    {
+        name: 'ข้าวมันไก่',
+        price: 50
+    },
+    {
+        name: 'ข้าวกระเพรา',
+        price: 50
     },
     {
         name: 'ข้าวไข่เจียว',
-        price: 25
+        price: 30
     },
     {
         name: 'ข้าวไก่เทอริยากิ',
         price: 69
-    },
-    {
-        name: 'มิโซะราเมน',
-        price: 100
     },
     {
         name: 'ข้าวมันไก่',
@@ -116,6 +144,10 @@ const Foods : CostData[] = [
     {
         name: 'พิซซ่าฮาวายเอี้ยน',
         price: 379
+    },
+    {
+        name: 'มิโซะราเมน',
+        price: 100
     },
     {
         name: 'ข้าวผัดชาฮั่ง',
@@ -140,6 +172,7 @@ const Subscriptions : CostData[] = [
         name: 'ค่าน้ำ (รายเดือน)',
         price: 600
     },
+    // หมายเหตุ ค่า subscription ของ app นั้นคือราคาที่ต่ำที่สุดที่สามารถจ่ายได้ นี่นคือผ่านการหารแบบ family แล้ว
     {
         name: 'Netflix (รายเดือน)',
         price: 105

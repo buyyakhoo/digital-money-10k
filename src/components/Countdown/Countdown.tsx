@@ -44,7 +44,7 @@ function Countdown() {
 
   return (
     time.years != -1 ? (
-        <p className="text-2xl p-1 rounded-lg max-w-max text-indigo-200 bg-indigo-900">ภายใน {time.years} ปี {time.days} วัน {time.hours} ชั่วโมง {time.minutes} นาที {time.seconds} วินาที คุณจะได้เงินเพิ่มอีกรอบเนื่องจากเงินหมดกระเป๋าแล้ว</p>
+        <p className="text-2xl p-1 rounded-lg max-w-max text-indigo-200 bg-indigo-900">ภายใน {time.years} ปี {time.days} วัน {time.hours} ชั่วโมง {time.minutes} นาที {time.seconds} วินาที คุณจะได้เงินเพิ่มอีกรอบ</p>
     ) : (
         <p className="text-2xl p-1 rounded-lg max-w-max text-indigo-200 bg-indigo-900">กำลังประมวลผล</p>
     )
